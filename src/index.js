@@ -15,7 +15,7 @@ for (var i = 0, len = inputs.length; i < len; i++) {
 //Get location
 var getLocation = $.ajax({
   type: 'GET',
-  url: "http://ipinfo.io/json",
+  url: "https://cors-anywhere.herokuapp.com/http://ipinfo.io/json",
 });
 
 //Once location is received, wrap get weather with returned data/function
@@ -27,7 +27,7 @@ getLocation.done(function(data) {
   //Get weather for user's current location
   var getWeather = $.ajax({
     type: 'GET',
-    url: "http://api.openweathermap.org/data/2.5/weather?q='" + location + "&APPID=4b3ff62e3ed31d05cb44a014d891b7e6",
+    url: "https://cors-anywhere.herokuapp.com/http://api.openweathermap.org/data/2.5/weather?q='" + location + "&APPID=4b3ff62e3ed31d05cb44a014d891b7e6",
   });
   //Once received do stuff with data!
   getWeather.done(function(data) {
@@ -88,7 +88,7 @@ $(".changeLocation").on("click", function() {
   //Get new weather data based on new location
   var getWeather = $.ajax({
     type: 'GET',
-    url: "http://api.openweathermap.org/data/2.5/weather?q='" + newLocation + "&APPID=4b3ff62e3ed31d05cb44a014d891b7e6",
+    url: "https://cors-anywhere.herokuapp.com/http://api.openweathermap.org/data/2.5/weather?q='" + newLocation + "&APPID=4b3ff62e3ed31d05cb44a014d891b7e6",
   });
   // Once received - repeat previous process to set new background image, etc
   getWeather.done(function(data) {

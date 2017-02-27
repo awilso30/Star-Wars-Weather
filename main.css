@@ -1,0 +1,130 @@
+html,
+body {
+  min-height: 100%;
+  background-image: url("https://i.ytimg.com/vi/JquobII5VjA/maxresdefault.jpg");
+  margin: 0;
+  padding: 0;
+}
+
+.weather-cold {
+  min-height: 100vh;
+  max-width: 100vw;
+  margin: auto;
+  padding: 0;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("https://blenderartists.org/forum/attachment.php?attachmentid=416901&d=1451562942");
+}
+
+.weather-temperate {
+  min-height: 100vh;
+  max-width: 100vw;
+  margin: auto;
+  padding: 0;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-image: url("http://vignette3.wikia.nocookie.net/starwars/images/9/9c/Endor_matte.jpg/revision/latest?cb=20070811234822");
+}
+
+.weather-hot {
+  min-height: 100vh;
+  max-width: 100vw;
+  margin: auto;
+  padding: 0;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("https://content.pulse.ea.com/content/starwars-ea-com/en_US/starwars/battlefront/news-articles/the-star-wars-battlefront-planets--creating-tatooine/_jcr_content/featuredImage/renditions/rendition1.img.jpg");
+}
+
+.ship {
+  height: 100vh;
+  position: relative;
+  background: url("http://i1079.photobucket.com/albums/w513/spudees/img_0530_32128270685_o_zpsdjomlulk.png")no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+}
+
+.changeLocation {
+  margin-top: 15px;
+}
+
+.container {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.eighty {
+  min-height: 82vh;
+  background-color: blue;
+  margin: 0;
+  padding: 0;
+  visibility: hidden;
+}
+
+.twenty {
+  min-height: 18vh;
+  min-width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+}
+
+.thirty-2 {
+  min-width: 30vw;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+}
+
+.thirty-2-2 {
+  width: 6%;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+
+.status {
+  height: 60%;
+  width: 30%;
+  display: inline-block;
+  background-color: #0f1817;
+  z-index: 200;
+  color: #5cc35c;
+  font-family: helvetica;
+  font-size: 2.3vmin;
+  text-align: left;
+
+}
+
+.controls {
+  height: 80%;
+  width: 30%;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  background-color: #0f1817;
+  z-index: 200;
+  color: #5cc35c;
+  font-family: helvetica;
+  font-size: 2.5vmin;
+}
+
+#buttons {
+  max-width: 100%;
+  height: auto;
+  width: auto;
+}
